@@ -6,11 +6,11 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual("Lighthouse Labs", "Bootcamp");
 
-assertEqual(1, 1);
-assertEqual(4, 3);
-assertEqual("same", "same");
+// assertEqual(1, 1);
+// assertEqual(4, 3);
+// assertEqual("same", "same");
 
 const head = function (arr) {
   return arr[0];
