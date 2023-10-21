@@ -12,7 +12,7 @@ assertEqual(1, 1);
 assertEqual(4, 3);
 assertEqual("same", "same");
 
-const head = function (arr, first) {
+const head = function (arr) {
   return arr[0];
 };
 
