@@ -21,20 +21,20 @@ const without = function (arr1, arr2) {
   //     console.log("too many value");
   //     return;
   //   }
-  const notMatch = [];
+  const match = [];
   for (let i = 0; i < arr1.length; i++) {
     // console.log(`arrayOne ${arr1[i]}`);
     for (let j = 0; j < arr2.length; j++) {
       //   console.log(arr2[j], arr1[i]);
       if (arr2[j] === arr1[i]) {
-        notMatch.push(arr1[i]);
+        match.push(arr1[i]);
       }
       //   console.log(`arrayTwo ${arr1[i]}`);
     }
   }
   const final = [];
   for (let k = 0; k < arr1.length; k++) {
-    for (let f = 0; f < notMatch.length; f++) {
+    for (let f = 0; f < match.length; f++) {
       if (arr1[k] !== notMatch[f]) {
         final.push(arr1[k]);
       }
