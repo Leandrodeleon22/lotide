@@ -18,18 +18,15 @@ const assertArrayEqual = function (arr1, arr2) {
 
 const middle = function (arr) {
   if (arr.length <= 2) return [];
-
+  const firstMiddleIndex = Math.floor(arr.length / 2) - 1;
+  const secondMiddleIndex = Math.floor(arr.length / 2);
+  const middleIndex = Math.floor(arr.length / 2);
   if (arr.length % 2 === 0) {
-    const firstMiddleIndex = Math.floor(arr.length / 2) - 1;
-    const secondMiddleIndex = Math.floor(arr.length / 2);
-
     console.log([arr[firstMiddleIndex], arr[secondMiddleIndex]]);
     return [arr[firstMiddleIndex], arr[secondMiddleIndex]];
   } else {
-    const middleIndex = Math.floor(arr.length / 2);
     console.log([arr[middleIndex]]);
     return [arr[middleIndex]];
-    // return arr[middleIndex]
   }
 };
 
