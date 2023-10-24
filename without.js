@@ -17,10 +17,10 @@ const assertArraysEqual = function (arr1, arr2) {
 };
 
 const without = function (arr1, arr2) {
-  if (arr2.length > arr2.length) {
-    console.log("too many value");
-    return;
-  }
+  //   if (arr2.length > arr2.length) {
+  //     console.log("too many value");
+  //     return;
+  //   }
   const notMatch = [];
   for (let i = 0; i < arr1.length; i++) {
     // console.log(`arrayOne ${arr1[i]}`);
@@ -42,12 +42,26 @@ const without = function (arr1, arr2) {
   }
 
   console.log(final);
+  return final;
+};
+
+const withoutFuncStyle = function (arr1, arr2) {
+  const output = arr1.filter((element) => !arr2.includes(element));
+  console.log(output);
+  return output;
 };
 
 // without([1, 2, 3], [1]); // => [2, 3]
+withoutFuncStyle([1, 2, 3], [1]); // => [2, 3]
+// without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 // without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]); // no need to capture return value for this test case
+// // Make sure the original array was not altered by the without function
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
 const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); // no need to capture return value for this test case
+withoutFuncStyle(words, ["lighthouse"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
