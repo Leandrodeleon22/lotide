@@ -46,7 +46,9 @@ const without = function (arr1, arr2) {
 };
 
 const withoutFuncStyle = function (arr1, arr2) {
-  const output = arr1.filter((element) => !arr2.includes(element));
+  const output = arr1.filter((element) => {
+    return !arr2.includes(element);
+  });
   console.log(output);
   return output;
 };
