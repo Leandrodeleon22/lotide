@@ -22,9 +22,9 @@ const eqObjects = function (object1, object2) {
   const objKeysTwo = Object.keys(object2);
 
   if (objKeysOne.length !== objKeysTwo.length) return false;
+  let output = true;
 
   for (const key of objKeysOne) {
-    let output = true;
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       output = eqArrays(object1[key], object2[key]);
     } else {
