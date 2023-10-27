@@ -32,9 +32,9 @@ const eqObjects = function (object1, object2) {
         output = false;
       }
     }
-
-    return output;
   }
+
+  return output;
 };
 
 const shirtObject = { color: "red", size: "medium" };
