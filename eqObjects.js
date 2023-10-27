@@ -22,7 +22,6 @@ const eqObjects = function (object1, object2) {
   const objKeysTwo = Object.keys(object2);
 
   if (objKeysOne.length !== objKeysTwo.length) return false;
-  let output = true;
 
   for (const key of objKeysOne) {
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
@@ -34,7 +33,7 @@ const eqObjects = function (object1, object2) {
     }
   }
 
-  return output;
+  return true;
 };
 
 const shirtObject = { color: "red", size: "medium" };
