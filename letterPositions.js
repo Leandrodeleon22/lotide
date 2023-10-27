@@ -24,7 +24,7 @@ const letterPositions = function (sentence) {
       if (!results[letter]) {
         results[letter] = [index];
       } else {
-        results[letter] = results[letter].concat(index);
+        results[letter] = results[letter].push(index);
       }
     }
   });
