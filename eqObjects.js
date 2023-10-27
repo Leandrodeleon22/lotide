@@ -24,11 +24,16 @@ const eqObjects = function (object1, object2) {
   if (objKeysOne.length !== objKeysTwo.length) return false;
 
   for (const key of objKeysOne) {
+    let output = true;
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-      return eqArrays(object1[key], object2[key]);
-    } else if (object1[key] === object2[key]) {
-      return true;
-    } else return false;
+      output = eqArrays(object1[key], object2[key]);
+    } else {
+      if (object1[key] !== object2[key]) {
+        output = false;
+      }
+    }
+
+    return output;
   }
 };
 
@@ -53,16 +58,17 @@ const anotherMultiColorShirtObject = {
   size: "medium",
   colors: ["red", "blue"],
 };
-assertEqual(
-  eqObjects(multiColorShirtObject, anotherMultiColorShirtObject),
-  true
-); // => true
 
 const longSleeveMultiColorShirtObject = {
   size: "medium",
   colors: ["red", "blue"],
   sleeveLength: "long",
 };
+
+assertEqual(
+  eqObjects(multiColorShirtObject, anotherMultiColorShirtObject),
+  true
+); // => true
 assertEqual(
   eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject),
   false
