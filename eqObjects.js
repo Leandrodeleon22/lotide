@@ -29,7 +29,7 @@ const eqObjects = function (object1, object2) {
       output = eqArrays(object1[key], object2[key]);
     } else {
       if (object1[key] !== object2[key]) {
-        output = false;
+        return false;
       }
     }
   }
