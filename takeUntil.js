@@ -22,9 +22,8 @@ const takeUntil = function (data, callBackFunc) {
   for (const el of data) {
     if (callBackFunc(el)) {
       break;
-    } else {
-      output.push(el);
     }
+    output.push(el);
   }
 
   return output;
