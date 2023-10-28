@@ -38,7 +38,7 @@ const assertObjectsEqual = function (actual, expected) {
     );
   } else {
     console.log(
-      `🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(actual)} `
+      `🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)} `
     );
   }
 };
