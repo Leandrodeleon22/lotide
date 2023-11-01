@@ -11,5 +11,5 @@ const oneElement = [2];
 
 console.log(tail(oneElement));
 assertEqual(oneElement.length, 1);
-assertEqual(tail(oneElement)[0], 2);
+
 assertEqual(tail(oneElement).length, oneElement.length - 1);
