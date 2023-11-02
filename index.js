@@ -8,7 +8,7 @@ const countLetters = require('./countLetters')
 const countOnly = require('./countOnly')
 const eqArrays = require('./eqArrays')
 const eqObjects = require('./eqObjects')
-const findkey = require('./findKey')
+const findKey = require('./findKey')
 const findKeyByValue = require('./findKeyByValue')
 const flatten = require('./flatten')
 const letterPositions = require('./letterPositions')
@@ -20,6 +20,6 @@ const without = require('./without')
 
 
 module.exports = {
-    head,tail, middle,assertArraysEqual,assertEqual, assertObjectsEqual, countLetters, countOnly, eqArrays, eqObjects,findkey,findKeyByValue, flatten,letterPositions,
+    head,tail, middle,assertArraysEqual,assertEqual, assertObjectsEqual, countLetters, countOnly, eqArrays, eqObjects,findKey,findKeyByValue, flatten,letterPositions,
     map, piglatin, reversingString, takeUntil, without
 }
