@@ -26,7 +26,7 @@ const middle = function (arr) {
   const middleIndex = Math.floor(arr.length / 2);
   if (arr.length % 2 === 0) {
     console.log([arr[firstMiddleIndex], arr[secondMiddleIndex]]);
-    return [arr[firstMiddleIndex], arr[secondMiddleIndex]];
+    return [arr[firstMiddleIndex],arr[secondMiddleIndex]];
   } else {
     console.log([arr[middleIndex]]);
     return [arr[middleIndex]];
