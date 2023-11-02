@@ -12,14 +12,11 @@ const findKey = require('./findKey')
 const findKeyByValue = require('./findKeyByValue')
 const flatten = require('./flatten')
 const letterPositions = require('./letterPositions')
-const map = require('./map')
-const piglatin = require('./pig-latin')
-const reversingString = require('./reversingString')
 const takeUntil = require('./takeUntil')
 const without = require('./without')
 
 
 module.exports = {
     head,tail, middle,assertArraysEqual,assertEqual, assertObjectsEqual, countLetters, countOnly, eqArrays, eqObjects,findKey,findKeyByValue, flatten,letterPositions,
-    map, piglatin, reversingString, takeUntil, without
+     takeUntil, without
 }
