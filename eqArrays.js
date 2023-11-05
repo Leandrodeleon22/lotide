@@ -23,6 +23,6 @@ const eqArrays = function (arr1, arr2) {
   return true;
 };
 
-console.log(eqArrays([[2, 3], [4]], [[2, 3], [4]])) //true
+// console.log(eqArrays([[2, 3], [4]], [[2, 3], [4]])) //true
 
 module.exports = eqArrays;
