@@ -1,14 +1,17 @@
 {
-  "name": "lotide",
+  "name": "@leandro316/lotide",
   "version": "1.0.0",
   "description": "Clone of lodash",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
-  "homepage": "https://github.com/Leandrodeleon22/lotide",
   "scripts": {
     "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leandrodeleon22/lotide"
   },
   "author": "Leandro De Leon",
   "license": "ISC",
