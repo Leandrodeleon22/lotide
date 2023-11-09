@@ -215,8 +215,34 @@ flatten([1, 2, [3, 4], 5, [6]]); // [1, 2, 3, 4, 5, 6]
 
 ---
 
-const flatten - `function(arr)`: flatten an array no matter how many levels of array inside the array
-const head - `function(arr)`: get the first element of an array or string
+<span style="color: orange;">**head**</span> - get the first element of an array or string
+
+#### Arguments - (array), (string)
+
+#### return - value
+
+#### Example
+
+```javascript
+head([1, 2, 3]); // 1
+```
+
+---
+
+<span style="color: orange;">**letterPositions**</span> - get the first element of an array or string
+
+#### Arguments - (array), (string)
+
+#### return - value
+
+#### Example
+
+```javascript
+head([1, 2, 3]); // 1
+```
+
+---
+
 const letterPositions - `function(word)`: get the index of a given letter/s
 const middle - `function(word)`: get the middle letter/s
 const tail - `function(arr)`: get the last element of an array
