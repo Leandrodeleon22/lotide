@@ -33,7 +33,7 @@ This project was created and published by me as part of my learnings at Lighthou
 #### Example
 
 ```javascript
-assertArraysEqual([1, 2, 3], [1, 2, "3"]); // Assertion Failed: array1 === array2
+assertArraysEqual([1, 2, 3], [1, 2, "3"]); // print Assertion Failed: array1 === array2
 ```
 
 ---
@@ -45,7 +45,7 @@ assertArraysEqual([1, 2, 3], [1, 2, "3"]); // Assertion Failed: array1 === array
 #### Example
 
 ```javascript
-assertArraysEqual("same", "same"); // Assertion passed: actual === expected
+assertArraysEqual("same", "same"); // print Assertion passed: actual === expected
 ```
 
 ---
@@ -63,7 +63,7 @@ assertObjectsEqual(
     size: "medium",
     colors: ["red", "blue"],
   }
-); // Assertion passed: actual === expected
+); // print Assertion passed: actual === expected
 ```
 
 ---
@@ -77,7 +77,7 @@ assertObjectsEqual(
 #### Example
 
 ```javascript
-countLetters("lighthouse in the house") , // {
+countLetters("lighthouse in the house") , // return {
     l: 1,
     i: 2,
     g: 1,
@@ -118,7 +118,7 @@ countOnly(firstNames, {
   Karima: true,
   Fang: true,
   Agouhanna: false,
-}) , // {Jason: 1, karima: undefined, Fang: 2, Agouhanna: undefined}
+}) , // return {Jason: 1, karima: undefined, Fang: 2, Agouhanna: undefined}
 ```
 
 ---
@@ -132,7 +132,7 @@ countOnly(firstNames, {
 #### Example
 
 ```javascript
-eqArrays([1, 2, 3], [1, 2, 3]), //true
+eqArrays([1, 2, 3], [1, 2, 3]), // return true
 ```
 
 ---
@@ -151,7 +151,7 @@ const anotherMultiColorShirtObject = {
   size: "medium",
   colors: ["red", "blue"],
 };
-eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), //true
+eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), // return true
 
 ```
 
@@ -176,7 +176,7 @@ findKey(
     Akelarre: { stars: 3 },
   },
   (x) => x.stars === 2
-); //"noma"
+); // return "noma"
 ```
 
 ---
@@ -196,7 +196,7 @@ const bestTVShowsByGenre = {
   drama: "The Wire",
 };
 
-findKeyByValue(bestTVShowsByGenre, "The Wire"),// "drama";
+findKeyByValue(bestTVShowsByGenre, "The Wire"),// return "drama";
 ```
 
 ---
@@ -210,7 +210,7 @@ findKeyByValue(bestTVShowsByGenre, "The Wire"),// "drama";
 #### Example
 
 ```javascript
-flatten([1, 2, [3, 4], 5, [6]]); // [1, 2, 3, 4, 5, 6]
+flatten([1, 2, [3, 4], 5, [6]]); // return [1, 2, 3, 4, 5, 6]
 ```
 
 ---
@@ -224,7 +224,7 @@ flatten([1, 2, [3, 4], 5, [6]]); // [1, 2, 3, 4, 5, 6]
 #### Example
 
 ```javascript
-head([1, 2, 3]); // 1
+head([1, 2, 3]); // return 1
 ```
 
 ---
@@ -238,14 +238,14 @@ head([1, 2, 3]); // 1
 #### Example
 
 ```javascript
-letterPositions("hello").l,// [2, 3]
+letterPositions("hello").l,// return [2, 3]
 ```
 
 ---
 
-<span style="color: orange;">**middle**</span> - get the middle letter/s of a string
+<span style="color: orange;">**middle**</span> - get the middle value/s of an array
 
-#### Arguments - (string)
+#### Arguments - (array)
 
 #### return - array
 
@@ -259,7 +259,22 @@ middle([1, 2, 3, 4, 5, 6]), // return [3,4]
 
 ---
 
-const middle - `function(word)`: get the middle letter/s
+<span style="color: orange;">**tail**</span> - get all the elements of an array except the first element
+
+#### Arguments - (array)
+
+#### return - array
+
+#### Example
+
+```javascript
+tail(["Hello", "Lighthouse", "Labs"]), // return ["Lighthouse", "Labs"]
+tail([1, 2, 3]), // return [2,3]
+
+```
+
+---
+
 const tail - `function(arr)`: get the last element of an array
 const takeUntil - `function(arr, callbackFn)`: return an array that meet the requirements in the call back functions
 const without - `function(arr1, arr2)`: return an array, removing the element in array one that array two have
