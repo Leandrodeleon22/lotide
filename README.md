@@ -229,21 +229,34 @@ head([1, 2, 3]); // 1
 
 ---
 
-<span style="color: orange;">**letterPositions**</span> - get the first element of an array or string
+<span style="color: orange;">**letterPositions**</span> - get the index of a given letter/s
 
-#### Arguments - (array), (string)
+#### Arguments - (string)
 
-#### return - value
+#### return - object
 
 #### Example
 
 ```javascript
-head([1, 2, 3]); // 1
+letterPositions("hello").l,// [2, 3]
 ```
 
 ---
 
-const letterPositions - `function(word)`: get the index of a given letter/s
+<span style="color: orange;">**middle**</span> - get the middle letter/s of a string
+
+#### Arguments - (string)
+
+#### return - array
+
+#### Example
+
+```javascript
+letterPositions("hello").l,// [2, 3]
+```
+
+---
+
 const middle - `function(word)`: get the middle letter/s
 const tail - `function(arr)`: get the last element of an array
 const takeUntil - `function(arr, callbackFn)`: return an array that meet the requirements in the call back functions

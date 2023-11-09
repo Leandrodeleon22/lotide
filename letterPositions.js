@@ -6,7 +6,7 @@ const letterPositions = function (sentence) {
       if (!results[letter]) {
         results[letter] = [index];
       } else {
-        results[letter] = results[letter].push(index);
+        results[letter].push(index);
       }
     }
   });
