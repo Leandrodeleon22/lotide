@@ -28,7 +28,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 <span style="color: orange;">**assertArraysEqual**</span> Check if two arrays have the same element. It prints if both of them are equal or not
 
-#### Arguments - Two array
+#### Arguments - Two array (array1, array2)
 
 #### Example
 
@@ -40,7 +40,7 @@ assertArraysEqual([1, 2, 3], [1, 2, "3"]); // Assertion Failed: array1 === array
 
 <span style="color: orange;">**assertEqual**</span> - Check if two elements are the same, the actual and expected. It prints if both of them are equal or not
 
-#### Arguments - two values
+#### Arguments - two values (value, value)
 
 #### Example
 
@@ -52,7 +52,7 @@ assertArraysEqual("same", "same"); // Assertion passed: actual === expected
 
 <span style="color: orange;">**assertObjectsEqual**</span> - Check if two objects has the same properties and value, the actual and expected. It prints if both of them are equal or not
 
-#### Arguments - two objects
+#### Arguments - two objects (object1, object2)
 
 #### Example
 
@@ -183,7 +183,7 @@ findKey(
 
 <span style="color: orange;">**findKeyByValue**</span> - return the key of an object base on the given value
 
-#### Arguments - (object1, callBackFunction)
+#### Arguments - (object1, value)
 
 #### return - object key/s
 
@@ -197,6 +197,20 @@ const bestTVShowsByGenre = {
 };
 
 findKeyByValue(bestTVShowsByGenre, "The Wire"),// "drama";
+```
+
+---
+
+<span style="color: orange;">**flatten**</span> - flatten an array with an array inside
+
+#### Arguments - (array)
+
+#### return - array
+
+#### Example
+
+```javascript
+flatten([1, 2, [3, 4], 5, [6]]); // [1, 2, 3, 4, 5, 6]
 ```
 
 ---
