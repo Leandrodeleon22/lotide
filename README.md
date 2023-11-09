@@ -143,9 +143,30 @@ const anotherMultiColorShirtObject = {
 };
 eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), //true
 
+```
 
-const eqObjects - `function(obj1, obj2)`: Check if two object equal
-const findKey - `function(obj, callBackFn)`: return the key/value properties that meet the requirements in the callback functions
+<span style="color: orange;">**findKey**</span> - return the key/value properties that meet the requirements in the callback functions
+
+#### Arguments - (object1, callBackFunction)
+
+#### return - object key/s
+
+#### Example
+
+```javascript
+findKey(
+  {
+    "Blue Hill": { stars: 1 },
+    Akaleri: { stars: 3 },
+    noma: { stars: 2 },
+    elBulli: { stars: 3 },
+    Ora: { stars: 2 },
+    Akelarre: { stars: 3 },
+  },
+  (x) => x.stars === 2
+); //"noma"
+```
+
 const findKeyByValue - `function(obj, strToGetTheValue)`: return the key property in object that meet the requirements
 const flatten - `function(arr)`: flatten an array no matter how many levels of array inside the array
 const head - `function(arr)`: get the first element of an array or string
@@ -154,4 +175,3 @@ const middle - `function(word)`: get the middle letter/s
 const tail - `function(arr)`: get the last element of an array
 const takeUntil - `function(arr, callbackFn)`: return an array that meet the requirements in the call back functions
 const without - `function(arr1, arr2)`: return an array, removing the element in array one that array two have
-```
