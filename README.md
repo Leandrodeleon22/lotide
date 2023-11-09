@@ -275,6 +275,33 @@ tail([1, 2, 3]), // return [2,3]
 
 ---
 
-const tail - `function(arr)`: get the last element of an array
+<span style="color: orange;">**takeUntil**</span> - return an array that meet the requirements in the call back functions. It stops to get the elements of an array once he meet the conditions in callback functions
+
+#### Arguments - (array, function)
+
+#### return - array
+
+#### Example
+
+```javascript
+const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+const data2 = [
+  "I've",
+  "been",
+  "to",
+  "Hollywood",
+  ",",
+  "I've",
+  "been",
+  "to",
+  "Redwood",
+];
+
+const results1 = takeUntil(data1, (x) => x < 0); // return [1, 2, 5, 7, 2]
+const results2 = takeUntil(data2, (x) => x === ","); // return  ["I've", "been", "to", "Hollywood"]
+```
+
+---
+
 const takeUntil - `function(arr, callbackFn)`: return an array that meet the requirements in the call back functions
 const without - `function(arr1, arr2)`: return an array, removing the element in array one that array two have
