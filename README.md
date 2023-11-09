@@ -20,17 +20,113 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Call it:**
 
-`const results = tail([1, 2, 3]) // => [2, 3]`
+`const results = _.tail([1, 2, 3]) // => [2, 3]`
 
 ## Documentation
 
-The following functions are currently implemented:
+### The following functions are currently implemented:
 
-const assertArraysEqual - `function(arr1, arr2)`: Check if two arrays have the same element
-const assertEqual- `function(actual, expected)`: Check if actual and expected are equal
-const assertObjectsEqual - `function(obj1,obj2)`: Check if two objects has the same properties
-const countLetters - `function(sentence)`: count the number of letters in each sentence
-const countOnly - `function(arrOfWords)`: count the number of Words in array
+<span style="color: orange;">**assertArraysEqual**</span> Check if two arrays have the same element. It prints if both of them are equal or not
+
+#### Arguments - Two array
+
+#### Example
+
+```javascript
+assertArraysEqual([1, 2, 3], [1, 2, "3"]); // Assertion Failed: array1 === array2
+```
+
+---
+
+<span style="color: orange;">**assertEqual**</span> - Check if two elements are the same, the actual and expected. It prints if both of them are equal or not
+
+#### Arguments - two values
+
+#### Example
+
+```javascript
+assertArraysEqual("same", "same"); // Assertion passed: actual === expected
+```
+
+<span style="color: orange;">**assertObjectsEqual**</span> - Check if two objects has the same properties and value, the actual and expected. It prints if both of them are equal or not
+
+#### Arguments - two objects
+
+#### Example
+
+```javascript
+assertObjectsEqual(
+  { colors: ["red", "blue"], size: "medium" },
+  {
+    size: "medium",
+    colors: ["red", "blue"],
+  }
+); // Assertion passed: actual === expected
+```
+
+<span style="color: orange;">**countLetters**</span> - count the number of letters and return an object
+
+#### Arguments - string
+
+#### return - object
+
+#### Example
+
+```javascript
+countLetters("lighthouse in the house") , // {
+    l: 1,
+    i: 2,
+    g: 1,
+    h: 4,
+    t: 2,
+    o: 2,
+    u: 2,
+    s: 2,
+    e: 3,
+    n: 1,
+  } //
+```
+
+<span style="color: orange;">**countOnly**</span> - count the number of Words in array base on the given value in the second arugument of a function.
+
+#### Arguments - (array, value)
+
+#### return - object
+
+#### Example
+
+```javascript
+const firstNames = [
+  "Karl",
+  "Salima",
+  "Agouhanna",
+  "Fang",
+  "Kavith",
+  "Jason",
+  "Salima",
+  "Fang",
+  "Joe",
+];
+countOnly(firstNames, {
+  Jason: true,
+  Karima: true,
+  Fang: true,
+  Agouhanna: false,
+}) , // {Jason: 1, karima: undefined, Fang: 2, Agouhanna: undefined}
+```
+
+<span style="color: orange;">**eqArrays**</span> - check if two arrays has equal values inside
+
+#### Arguments - (array1, array2)
+
+#### return - Boolean
+
+#### Example
+
+```javascript
+eqArrays([1, 2, 3], [1, 2, 3]), //true
+```
+
 const eqArrays - `function(arr1, arr2)`: Check if two arrays are equal
 const eqObjects - `function(obj1, obj2)`: Check if two object equal
 const findKey - `function(obj, callBackFn)`: return the key/value properties that meet the requirements in the callback functions
