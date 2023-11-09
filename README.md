@@ -303,5 +303,19 @@ const results2 = takeUntil(data2, (x) => x === ","); // return  ["I've", "been",
 
 ---
 
-const takeUntil - `function(arr, callbackFn)`: return an array that meet the requirements in the call back functions
+<span style="color: orange;">**takeUntil**</span> - Return an array by removing the elements from array one that are also present in array two
+
+#### Arguments - (arrayOne, arrayTwo)
+
+#### return - array
+
+#### Example
+
+```javascript
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]); // return ["hello", "world"]
+```
+
+---
+
 const without - `function(arr1, arr2)`: return an array, removing the element in array one that array two have

@@ -3,4 +3,4 @@ const without = require("../without");
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+assertArraysEqual(without(words, ["lighthouse"]), ["hello", "world"]);
