@@ -1,6 +1,6 @@
 const letterPositions = function (sentence) {
   const results = {};
-  // logic to update results here
+
   [...sentence].forEach((letter, index) => {
     if (letter !== " ") {
       if (!results[letter]) {

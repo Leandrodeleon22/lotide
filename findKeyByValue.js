@@ -6,6 +6,4 @@ const findKeyByValue = function (obj, stringToGetValue) {
   return resultKey.join("");
 };
 
-// findKeyByValue(bestTVShowsByGenre, "The Wire");
-
 module.exports = findKeyByValue;

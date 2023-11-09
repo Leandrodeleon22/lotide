@@ -1,5 +1,4 @@
 const flatten = function (arr) {
-  //   const flattened2 = arr.flat(Infinity);
   let flattened = [];
   for (let i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i])) {
