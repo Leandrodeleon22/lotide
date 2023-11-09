@@ -127,7 +127,23 @@ countOnly(firstNames, {
 eqArrays([1, 2, 3], [1, 2, 3]), //true
 ```
 
-const eqArrays - `function(arr1, arr2)`: Check if two arrays are equal
+<span style="color: orange;">**eqObjects**</span> - check if two objects has equal key/properties values
+
+#### Arguments - (object1, object2)
+
+#### return - Boolean
+
+#### Example
+
+```javascript
+const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
+const anotherMultiColorShirtObject = {
+  size: "medium",
+  colors: ["red", "blue"],
+};
+eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), //true
+
+
 const eqObjects - `function(obj1, obj2)`: Check if two object equal
 const findKey - `function(obj, callBackFn)`: return the key/value properties that meet the requirements in the callback functions
 const findKeyByValue - `function(obj, strToGetTheValue)`: return the key property in object that meet the requirements
@@ -138,3 +154,4 @@ const middle - `function(word)`: get the middle letter/s
 const tail - `function(arr)`: get the last element of an array
 const takeUntil - `function(arr, callbackFn)`: return an array that meet the requirements in the call back functions
 const without - `function(arr1, arr2)`: return an array, removing the element in array one that array two have
+```
