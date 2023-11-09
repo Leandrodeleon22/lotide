@@ -48,6 +48,8 @@ assertArraysEqual([1, 2, 3], [1, 2, "3"]); // Assertion Failed: array1 === array
 assertArraysEqual("same", "same"); // Assertion passed: actual === expected
 ```
 
+---
+
 <span style="color: orange;">**assertObjectsEqual**</span> - Check if two objects has the same properties and value, the actual and expected. It prints if both of them are equal or not
 
 #### Arguments - two objects
@@ -63,6 +65,8 @@ assertObjectsEqual(
   }
 ); // Assertion passed: actual === expected
 ```
+
+---
 
 <span style="color: orange;">**countLetters**</span> - count the number of letters and return an object
 
@@ -86,6 +90,8 @@ countLetters("lighthouse in the house") , // {
     n: 1,
   } //
 ```
+
+---
 
 <span style="color: orange;">**countOnly**</span> - count the number of Words in array base on the given value in the second arugument of a function.
 
@@ -115,6 +121,8 @@ countOnly(firstNames, {
 }) , // {Jason: 1, karima: undefined, Fang: 2, Agouhanna: undefined}
 ```
 
+---
+
 <span style="color: orange;">**eqArrays**</span> - check if two arrays has equal values inside
 
 #### Arguments - (array1, array2)
@@ -126,6 +134,8 @@ countOnly(firstNames, {
 ```javascript
 eqArrays([1, 2, 3], [1, 2, 3]), //true
 ```
+
+---
 
 <span style="color: orange;">**eqObjects**</span> - check if two objects has equal key/properties values
 
@@ -145,7 +155,9 @@ eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), //true
 
 ```
 
-<span style="color: orange;">**findKey**</span> - return the key/value properties that meet the requirements in the callback functions
+---
+
+<span style="color: orange;">**findKey**</span> - return the key of an object that meet the requirements in the callback functions
 
 #### Arguments - (object1, callBackFunction)
 
@@ -167,7 +179,28 @@ findKey(
 ); //"noma"
 ```
 
-const findKeyByValue - `function(obj, strToGetTheValue)`: return the key property in object that meet the requirements
+---
+
+<span style="color: orange;">**findKeyByValue**</span> - return the key of an object base on the given value
+
+#### Arguments - (object1, callBackFunction)
+
+#### return - object key/s
+
+#### Example
+
+```javascript
+const bestTVShowsByGenre = {
+  sci_fi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama: "The Wire",
+};
+
+findKeyByValue(bestTVShowsByGenre, "The Wire"),// "drama";
+```
+
+---
+
 const flatten - `function(arr)`: flatten an array no matter how many levels of array inside the array
 const head - `function(arr)`: get the first element of an array or string
 const letterPositions - `function(word)`: get the index of a given letter/s
