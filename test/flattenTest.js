@@ -1,4 +1,10 @@
 const flatten = require("../flatten");
-const assertArraysEqual = require("../assertArraysEqual");
+const expect = require("chai").expect;
 
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // =>
+describe("#flatten", () => {
+  it("returns '[1,2,3,4,5,6]'for flatten([1,2,[3,4],5,[6]]) ", () => {
+    expect(flatten([1, 2, [3, 4], 5, [6]])).to.have.same.members([
+      1, 2, 3, 4, 5, 6,
+    ]);
+  });
+});
