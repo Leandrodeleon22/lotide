@@ -1,6 +1,14 @@
 const assertArraysEqual = require("../assertArraysEqual");
 const without = require("../without");
+const expect = require("chai").expect;
 
 const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(without(words, ["lighthouse"]), ["hello", "world"]);
+
+describe("#letterPositions", () => {
+  it("returns ['hello','world'] for without(words, ['lighthouse'])['l'] ", () => {
+    expect(without(words, ["lighthouse"])).to.have.same.members([
+      "hello",
+      "world",
+    ]);
+  });
+});
