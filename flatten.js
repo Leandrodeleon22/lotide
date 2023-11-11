@@ -13,4 +13,4 @@ const flatten = function (arr) {
   return flattened;
 };
 
-module.export = flatten;
+module.exports = flatten;

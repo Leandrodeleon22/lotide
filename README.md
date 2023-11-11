@@ -317,5 +317,3 @@ without(words, ["lighthouse"]); // return ["hello", "world"]
 ```
 
 ---
-
-const without - `function(arr1, arr2)`: return an array, removing the element in array one that array two have
